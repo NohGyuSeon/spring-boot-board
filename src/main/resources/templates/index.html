@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to the Board</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f2f2f2;
+    }
+    h1 {
+      color: #333;
+      margin-top: 50px;
+      font-size: 32px;
+      animation: fadeIn 1s ease-in-out;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      margin-top: 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: background-color 0.3s ease-in-out;
+    }
+    .btn:hover {
+      background-color: #555;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+<h1>Welcome to the Board</h1>
+<a class="btn" href="/boards">게시글 목록</a>
+<a class="btn" href="/boards/add">게시글 작성</a>
+</body>
+</html>
